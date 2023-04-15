@@ -6,7 +6,7 @@ class Cell{
         this.isMutable = true;
         this.pencilmarks = new Array();
         this.showmark = false;
-        this.state = 0
+        this.state = 2
         this.isMutable = true;
     }
 
@@ -22,14 +22,14 @@ class Cell{
     showNumber(){
         if(this.isMutable){
             if(this.state != 0){
-                text(this.state.toString(), this.x, this.y)
-            }
-            else{
                 textSize(35);
                 strokeWeight(2);
                 fill(0)
-                text('0', this.x+this.size/2-7, this.y+this.size/2+10)
+                text(this.state.toString(), this.x+this.size/2-9, this.y+this.size/2+10)
 
+            }
+            else{
+                return
             }
         }
     }
