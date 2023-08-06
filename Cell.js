@@ -19,6 +19,10 @@ class Cell{
         
     }
 
+    cellDetect(){
+        
+    }
+
     showNumber(){
         if(this.isMutable){
             if(this.state != 0){
